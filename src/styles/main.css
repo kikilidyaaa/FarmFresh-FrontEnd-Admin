@@ -1,0 +1,866 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Barlow", "Poppins", sans-serif;
+  background-color: #e3f6f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The sidebar menu */
+.sidenav {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff; /* Black */
+  overflow-x: auto;
+  padding-top: 20px;
+}
+
+.sidenav h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins";
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.sidenav p {
+  font-size: 14px;
+  color: #808080;
+  text-transform: capitalize;
+}
+
+.web-name {
+  margin: 20px;
+  margin-bottom: 50px;
+  padding-left: 12px;
+}
+
+.side-menu {
+  padding-left: 12px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.sidenav i {
+  margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* The sidebar menu */
+
+/* Main content */
+main {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* First content */
+.top-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.item-menu {
+  margin-left: auto;
+  padding-right: 30px;
+}
+
+.item-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.item-menu ul li a {
+  display: inline-block;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.item-menu ul li a:hover {
+  background-color: #e3f6f5;
+}
+
+.top-dashboard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  border-left: 1px solid #ccc;
+}
+
+.profile-pic p {
+  margin-right: 10px;
+}
+
+/* First content */
+
+/* Dashboard */
+
+/* Second Dashboard content */
+.second-dashboard {
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen ke ujung kiri dan kanan */
+  align-items: center; /* Posisikan vertikal ke tengah */
+  padding: 20px; /* Padding untuk ruang di dalam second-dashboard */
+  margin-bottom: 10px;
+}
+
+.welcome-dashboard {
+  text-align: left;
+}
+
+.welcome-dashboard h1 {
+  margin-bottom: 12px;
+}
+
+.date-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.icon-container {
+  margin-right: 10px;
+}
+
+.icon-container i {
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h3 {
+  margin-bottom: 5px;
+}
+/* Second Dashboard content */
+
+/* Third Dashboard content */
+.dashboard-mainContent {
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen ke ujung kiri dan kanan */
+  align-items: center; /* Posisikan vertikal ke tengah */
+  padding: 20px; /* Padding untuk ruang di dalam second-dashboard */
+  margin-bottom: 10px;
+}
+
+.item-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+}
+
+.icons-container {
+  margin-right: 10px;
+}
+
+.icons-container i {
+  margin-right: 16px;
+  background-color: #bff6c3;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+}
+
+.texts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.texts-container h3 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+/* Third Dashboard content */
+
+/* Fourth Dashboard content */
+.dashboard-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Menyusun elemen ke ujung kiri dan kanan */
+  padding: 20px; /* Padding untuk ruang di dalam second-dashboard */
+  margin-bottom: 10px;
+}
+
+.review-text {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+}
+
+.profile-review-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.pic-container {
+  margin-right: 10px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-text h1 {
+  margin-bottom: 10px;
+}
+
+.profile-review {
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.description-container {
+  text-align: justify;
+}
+
+.description-container p {
+  margin-bottom: 10px;
+}
+
+.checked {
+  color: orange;
+}
+/* Fourth Dashboard content */
+/* Dashboard */
+
+/* Location */
+
+/* Search Map content */
+.search-map-container {
+  width: 100%;
+  max-width: 1300px; /* Mengatur lebar maksimum */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 16px;
+  display: flex;
+  justify-content: space-between; /* Mengatur ruang antara search-form dan search-data */
+}
+
+.search-form {
+  flex: 1; /* Membuat form mengambil sebagian besar ruang tersedia */
+  padding: 10px;
+}
+
+.search-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #45a049;
+}
+
+.search-data {
+  flex: 1; /* Membuat search-data mengambil sebagian besar ruang tersedia */
+  padding: 10px;
+  border-left: 1px solid #ccc; /* Garis pemisah antara search-form dan search-data */
+  margin-left: 20px; /* Memberi jarak antara search-form dan search-data */
+}
+
+.search-result {
+  margin-bottom: 12px;
+}
+
+.search-result p {
+  margin-bottom: 8px;
+}
+
+/* Search Map content */
+
+/* Map content */
+
+.map-container {
+  width: 100%;
+  max-width: 1300px; /* Mengatur lebar maksimum */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 16px;
+  display: flex;
+}
+
+#map {
+  height: 100%;
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+
+.custom-map-control-button:hover {
+  background: rgb(235, 235, 235);
+}
+
+/* Map content */
+
+/* Location */
+
+/* History */
+
+/* Order Count content */
+.order-count {
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen ke ujung kiri dan kanan */
+  align-items: center; /* Posisikan vertikal ke tengah */
+  padding: 20px; /* Padding untuk ruang di dalam second-dashboard */
+  margin-bottom: 10px;
+}
+
+/* Order Count content */
+
+.order-container {
+  width: 100%;
+  max-width: 1300px; /* Mengatur lebar maksimum */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Menambahkan margin bawah untuk memisahkan dengan konten di bawahnya */
+}
+
+.top-section h2 {
+  margin: 0; /* Hapus margin default */
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  align-items: center;
+}
+
+th {
+  background-color: greenyellow;
+  padding: 15px;
+}
+
+td {
+  background-color: #96d4d4;
+  padding: 20px;
+}
+
+/* History */
+
+/* Items */
+
+/* items Count content */
+.items-count {
+  display: flex;
+  justify-content: space-between; /* Menyusun elemen ke ujung kiri dan kanan */
+  align-items: center; /* Posisikan vertikal ke tengah */
+  padding: 20px; /* Padding untuk ruang di dalam second-dashboard */
+  margin-bottom: 10px;
+}
+
+/* items Count content */
+
+.items-container {
+  width: 100%;
+  max-width: 1300px; /* Mengatur lebar maksimum */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+/* Pagination styling */
+#pagination {
+  display: flex;
+  justify-content: center; /* Center the pagination buttons */
+  align-items: center;
+  margin-top: 20px; /* Add some space above the pagination */
+}
+
+#pagination button {
+  background-color: #007bff; /* Blue button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Add some padding */
+  margin: 0 5px; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#pagination button:disabled {
+  background-color: #cccccc; /* Disabled button background color */
+  cursor: not-allowed; /* Not-allowed cursor for disabled button */
+}
+
+#pagination button:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue background color on hover, except for disabled buttons */
+}
+
+
+/* Hover effect on table rows */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+th {
+  background-color: greenyellow;
+}
+
+td {
+  background-color: #96d4d4;
+}
+
+tr:hover {
+  background-color: #c3e6e5; /* Light blue background on hover */
+}
+
+/* Add Items Button */
+.add-items {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-items i {
+  margin-right: 8px;
+}
+
+.add-items:hover {
+  background-color: #0056b3;
+}
+
+
+/* Additional styles for modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Increase width to make form bigger */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: black; /* Set label text color to black */
+}
+
+.modal-content input,
+.modal-content select {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ensure fields take up full width */
+}
+
+.modal-content button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Items */
+
+/* Store */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  color: gray;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+display: flex;
+justify-content: flex-end;
+margin-top: 20px;
+}
+
+.buttons button {
+padding: 10px 10px;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+margin-left: 10px;
+}
+
+#add-profil {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  margin-left: auto;
+
+}
+
+#add-profil:hover {
+background-color: #0056b3;
+}
+
+#save {
+  background-color: #007bff;
+  color: white;
+}
+
+#save:hover {
+  background-color: #0056b3;
+}
+
+#edit {
+  background-color: #6c757d;
+  color: white;
+}
+
+#edit:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+#add-email {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+#add-email:hover {
+  background-color: #0056b3;
+}
+
+.email-section {
+  margin-top: 20px;
+}
+
+.email-section h2 {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 7px;
+}
+
+.email p {
+  margin: 0;
+  color: black;
+}
+
+
+/* Store */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {
+    float: left;
+  }
+  main {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-map-container {
+    flex-direction: column; /* Tampilan vertikal pada layar yang lebih kecil */
+  }
+
+  .search-form,
+  .search-data {
+    width: 100%; /* Membuat form dan data memenuhi lebar saat tampilan vertikal */
+    margin: 0; /* Menghilangkan margin antara form dan data */
+    padding: 10px;
+    border-left: none; /* Menghilangkan garis pemisah pada tampilan vertikal */
+  }
+
+  .search-data {
+    border-top: 1px solid #ccc; /* Garis pemisah di atas search-data pada tampilan vertikal */
+    margin-top: 20px; /* Memberi jarak atas pada tampilan vertikal */
+  }
+}
